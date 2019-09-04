@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Heroic Features - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Projects</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">World Clocks
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TBD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TBD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TBD</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="clock">
+            <div class="outer-clock-face">
+              <div class="marking marking-one"></div>
+              <div class="marking marking-two"></div>
+              <div class="marking marking-three"></div>
+              <div class="marking marking-four"></div>
+              <div class="inner-clock-face">
+                <div class="hand hour-hand"></div>
+                <div class="hand min-hand"></div>
+                <div class="hand second-hand"></div>
+              </div>
+            </div>
+          </div>
+          <div id> <p id ="dateInfo1"></p>
+          </div>
+          <form name="#">
+
+              <div class="select-style2"> 
+                  <select size="1" autocomplete="on" id="list1" onchange="getSelectValue();"> 
+                     <option value="0">GMT GMT</option>
+                     <option value="0">UTC GMT</option>
+                     <option value="+1">ECT GMT+1:00 </option>
+                     <option value="+2">EET GMT+2:00 </option>
+                     <option value="+2">ART GMT+2:00 </option>
+                     <option value="+3">EAT GMT+3:00 </option>
+                     <option value="+4">NET GMT+4:00 </option>
+                     <option value="+5">PLT GMT+5:00 </option>
+                     <option value="+6">BST GMT+6:00 </option>
+                     <option value="+7">VST GMT+7:00 </option>
+                     <option value="+8">CTT GMT+8:00 </option>
+                     <option value="+9">JST GMT+9:00 </option>
+                     <option value="+10">AET GMT+10:00 </option>
+                     <option value="+11">SST GMT+11:00 </option>
+                     <option value="+12">NST GMT+12:00 </option>
+                     <option value="-11">MIT GMT-11:00 </option>
+                     <option value="-10">HST GMT-10:00 </option>
+                     <option value="-9">AST GMT-9:00 </option>
+                     <option value="-8">PST GMT-8:00 </option>
+                     <option value="-7">PNT GMT-7:00 </option>
+                     <option value="-7">MST GMT-7:00 </option>
+                     <option value="-6">CST GMT-6:00 </option>
+                     <option value="-5">EST GMT-5:00 </option>
+                     <option value="-5">IET GMT-5:00 </option>
+                     <option value="-4">PRT GMT-4:00 </option>
+                     <option value="-3">AGT GMT-3:00 </option>
+                     <option value="-3">BET GMT-3:00 </option>
+                     <option value="-1">CAT GMT-1:00 </option>
+                  </select>
+              </div>
+         </form>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="clock">
+            <div class="outer-clock-face">
+              <div class="marking marking-one"></div>
+              <div class="marking marking-two"></div>
+              <div class="marking marking-three"></div>
+              <div class="marking marking-four"></div>
+              <div class="inner-clock-face">
+                <div class="hand hour-hand2"></div>
+                <div class="hand min-hand2"></div>
+                <div class="hand second-hand2"></div>
+              </div>
+            </div>
+          </div>
+          <div id> <p id ="dateInfo2"></p>
+          </div>
+          <form name="#">
+
+              <div class="select-style2"> 
+                  <select  size="1" autocomplete="on" id="list2" onchange="getSelectValue2();"> 
+                     <option value="0">GMT GMT</option>
+                     <option value="0">UTC GMT</option>
+                     <option value="+1">ECT GMT+1:00 </option>
+                     <option value="+2">EET GMT+2:00 </option>
+                     <option value="+2">ART GMT+2:00 </option>
+                     <option value="+3">EAT GMT+3:00 </option>
+                     <option value="+4">NET GMT+4:00 </option>
+                     <option value="+5">PLT GMT+5:00 </option>
+                     <option value="+6">BST GMT+6:00 </option>
+                     <option value="+7">VST GMT+7:00 </option>
+                     <option value="+8">CTT GMT+8:00 </option>
+                     <option value="+9">JST GMT+9:00 </option>
+                     <option value="+10">AET GMT+10:00 </option>
+                     <option value="+11">SST GMT+11:00 </option>
+                     <option value="+12">NST GMT+12:00 </option>
+                     <option value="-11">MIT GMT-11:00 </option>
+                     <option value="-10">HST GMT-10:00 </option>
+                     <option value="-9">AST GMT-9:00 </option>
+                     <option value="-8">PST GMT-8:00 </option>
+                     <option value="-7">PNT GMT-7:00 </option>
+                     <option value="-7">MST GMT-7:00 </option>
+                     <option value="-6">CST GMT-6:00 </option>
+                     <option value="-5">EST GMT-5:00 </option>
+                     <option value="-5">IET GMT-5:00 </option>
+                     <option value="-4">PRT GMT-4:00 </option>
+                     <option value="-3">AGT GMT-3:00 </option>
+                     <option value="-3">BET GMT-3:00 </option>
+                     <option value="-1">CAT GMT-1:00 </option>
+                  </select>
+              </div>
+         </form>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="clock">
+            <div class="outer-clock-face">
+              <div class="marking marking-one"></div>
+              <div class="marking marking-two"></div>
+              <div class="marking marking-three"></div>
+              <div class="marking marking-four"></div>
+              <div class="inner-clock-face">
+                <div class="hand hour-hand3"></div>
+                <div class="hand min-hand3"></div>
+                <div class="hand second-hand3"></div>
+              </div>
+            </div>
+          </div>
+          <div id> <p id ="dateInfo3"></p>
+          </div>
+          <form name="#">
+
+              <div class="select-style2"> 
+                  <select size="1" autocomplete="on" id="list3" onchange="getSelectValue3();"> 
+                     <option value="0">GMT GMT</option>
+                     <option value="0">UTC GMT</option>
+                     <option value="+1">ECT GMT+1:00 </option>
+                     <option value="+2">EET GMT+2:00 </option>
+                     <option value="+2">ART GMT+2:00 </option>
+                     <option value="+3">EAT GMT+3:00 </option>
+                     <option value="+4">NET GMT+4:00 </option>
+                     <option value="+5">PLT GMT+5:00 </option>
+                     <option value="+6">BST GMT+6:00 </option>
+                     <option value="+7">VST GMT+7:00 </option>
+                     <option value="+8">CTT GMT+8:00 </option>
+                     <option value="+9">JST GMT+9:00 </option>
+                     <option value="+10">AET GMT+10:00 </option>
+                     <option value="+11">SST GMT+11:00 </option>
+                     <option value="+12">NST GMT+12:00 </option>
+                     <option value="-11">MIT GMT-11:00 </option>
+                     <option value="-10">HST GMT-10:00 </option>
+                     <option value="-9">AST GMT-9:00 </option>
+                     <option value="-8">PST GMT-8:00 </option>
+                     <option value="-7">PNT GMT-7:00 </option>
+                     <option value="-7">MST GMT-7:00 </option>
+                     <option value="-6">CST GMT-6:00 </option>
+                     <option value="-5">EST GMT-5:00 </option>
+                     <option value="-5">IET GMT-5:00 </option>
+                     <option value="-4">PRT GMT-4:00 </option>
+                     <option value="-3">AGT GMT-3:00 </option>
+                     <option value="-3">BET GMT-3:00 </option>
+                     <option value="-1">CAT GMT-1:00 </option>
+                  </select>
+              </div>
+         </form>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="clock">
+            <div class="outer-clock-face">
+              <div class="marking marking-one"></div>
+              <div class="marking marking-two"></div>
+              <div class="marking marking-three"></div>
+              <div class="marking marking-four"></div>
+              <div class="inner-clock-face">
+                <div class="hand hour-hand4"></div>
+                <div class="hand min-hand4"></div>
+                <div class="hand second-hand4"></div>
+              </div>
+            </div>
+          </div>
+          <div id> <p id ="dateInfo4"></p>
+          </div>
+          <form name="#">
+
+              <div class="select-style2"> 
+                  <select size="1" autocomplete="on" id="list4" onchange="getSelectValue4();"> 
+                     <option value="0">GMT GMT</option>
+                     <option value="0">UTC GMT</option>
+                     <option value="+1">ECT GMT+1:00 </option>
+                     <option value="+2">EET GMT+2:00 </option>
+                     <option value="+2">ART GMT+2:00 </option>
+                     <option value="+3">EAT GMT+3:00 </option>
+                     <option value="+4">NET GMT+4:00 </option>
+                     <option value="+5">PLT GMT+5:00 </option>
+                     <option value="+6">BST GMT+6:00 </option>
+                     <option value="+7">VST GMT+7:00 </option>
+                     <option value="+8">CTT GMT+8:00 </option>
+                     <option value="+9">JST GMT+9:00 </option>
+                     <option value="+10">AET GMT+10:00 </option>
+                     <option value="+11">SST GMT+11:00 </option>
+                     <option value="+12">NST GMT+12:00 </option>
+                     <option value="-11">MIT GMT-11:00 </option>
+                     <option value="-10">HST GMT-10:00 </option>
+                     <option value="-9">AST GMT-9:00 </option>
+                     <option value="-8">PST GMT-8:00 </option>
+                     <option value="-7">PNT GMT-7:00 </option>
+                     <option value="-7">MST GMT-7:00 </option>
+                     <option value="-6">CST GMT-6:00 </option>
+                     <option value="-5">EST GMT-5:00 </option>
+                     <option value="-5">IET GMT-5:00 </option>
+                     <option value="-4">PRT GMT-4:00 </option>
+                     <option value="-3">AGT GMT-3:00 </option>
+                     <option value="-3">BET GMT-3:00 </option>
+                     <option value="-1">CAT GMT-1:00 </option>
+                  </select>
+              </div>
+         </form>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Simon Li</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script> // First clock
+        
+    function getSelectValue()
+    {
+        var selectedValue = document.getElementById("list1").value;
+        return calcTime(selectedValue);
+    }
+
+    function calcTime(offset) {
+
+    d = new Date();
+
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+    nd = new Date(utc + (3600000*offset));
+
+    document.getElementById("dateInfo1").innerHTML = nd.toLocaleString();
+
+    hour = nd.getHours();
+    return hour;
+  }
+
+    const secondHand = document.querySelector('.second-hand');
+    const minsHand = document.querySelector('.min-hand');
+    const hourHand = document.querySelector('.hour-hand');
+
+    function setDate() {
+    const now = new Date();
+
+    const seconds = now.getSeconds();
+    const secondsDegrees = ((seconds / 60) * 360) + 90;
+    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+    const mins = now.getMinutes();
+    const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
+    minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+
+    const hour = getSelectValue();//
+    const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;   
+    hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+  }
+
+  setInterval(setDate, 1000);
+
+  setDate();
+  
+
+  
+</script>
+
+<script> // 2
+        
+  function getSelectValue2()
+  {
+      var selectedValue2 = document.getElementById("list2").value;
+      return calcTime2(selectedValue2);
+  }
+
+  function calcTime2(offset2) {
+
+  d2 = new Date();
+
+  utc2 = d2.getTime() + (d2.getTimezoneOffset() * 60000);
+
+  nd2 = new Date(utc2 + (3600000*offset2));
+
+  document.getElementById("dateInfo2").innerHTML = nd2.toLocaleString();
+
+  hour2 = nd2.getHours();
+  return hour2;
+}
+
+  const secondHand2 = document.querySelector('.second-hand2');
+  const minsHand2 = document.querySelector('.min-hand2');
+  const hourHand2 = document.querySelector('.hour-hand2');
+
+ function setDate() {
+  const now2 = new Date();
+
+  const seconds2 = now2.getSeconds();
+  const secondsDegrees2 = ((seconds2 / 60) * 360) + 90;
+  secondHand2.style.transform = `rotate(${secondsDegrees2}deg)`;
+
+  const mins2 = now2.getMinutes();
+  const minsDegrees2 = ((mins2 / 60) * 360) + ((seconds2/60)*6) + 90;
+  minsHand2.style.transform = `rotate(${minsDegrees2}deg)`;
+
+  const hour2 = getSelectValue2();//
+  const hourDegrees2 = ((hour2 / 12) * 360) + ((mins2/60)*30) + 90;   
+  hourHand2.style.transform = `rotate(${hourDegrees2}deg)`;
+}
+
+setInterval(setDate, 1000);
+
+setDate();
+
+</script>
+
+<script> // 3
+        
+  function getSelectValue3()
+  {
+      var selectedValue3 = document.getElementById("list3").value;
+      return calcTime3(selectedValue3);
+  }
+
+  function calcTime3(offset3) {
+
+  d3 = new Date();
+
+  utc3 = d3.getTime() + (d3.getTimezoneOffset() * 60000);
+
+  nd3 = new Date(utc3 + (3600000*offset3));
+
+  document.getElementById("dateInfo3").innerHTML = nd3.toLocaleString();
+
+  hour3 = nd3.getHours();
+  return hour3;
+}
+
+  const secondHand3 = document.querySelector('.second-hand3');
+  const minsHand3 = document.querySelector('.min-hand3');
+  const hourHand3 = document.querySelector('.hour-hand3');
+
+ function setDate() {
+  const now3 = new Date();
+
+  const seconds3 = now3.getSeconds();
+  const secondsDegrees3 = ((seconds3 / 60) * 360) + 90;
+  secondHand3.style.transform = `rotate(${secondsDegrees3}deg)`;
+
+  const mins3 = now3.getMinutes();
+  const minsDegrees3 = ((mins3 / 60) * 360) + ((seconds3/60)*6) + 90;
+  minsHand3.style.transform = `rotate(${minsDegrees3}deg)`;
+
+  const hour3 = getSelectValue3();//
+  const hourDegrees3 = ((hour3 / 12) * 360) + ((mins3/60)*30) + 90;   
+  hourHand3.style.transform = `rotate(${hourDegrees3}deg)`;
+}
+
+setInterval(setDate, 1000);
+
+setDate();
+
+</script>
+
+<script> // 4
+        
+  function getSelectValue4()
+  {
+      var selectedValue4 = document.getElementById("list4").value;
+      return calcTime4(selectedValue4);
+  }
+
+  function calcTime4(offset4) {
+
+  d4 = new Date();
+
+  utc4 = d4.getTime() + (d4.getTimezoneOffset() * 60000);
+
+  nd4 = new Date(utc4 + (3600000*offset4));
+
+  document.getElementById("dateInfo4").innerHTML = nd4.toLocaleString();
+
+  hour4 = nd4.getHours();
+  return hour4;
+}
+
+  const secondHand4 = document.querySelector('.second-hand4');
+  const minsHand4 = document.querySelector('.min-hand4');
+  const hourHand4 = document.querySelector('.hour-hand4');
+
+ function setDate() {
+  const now4 = new Date();
+
+  const seconds4 = now4.getSeconds();
+  const secondsDegrees4 = ((seconds4 / 60) * 360) + 90;
+  secondHand4.style.transform = `rotate(${secondsDegrees4}deg)`;
+
+  const mins4 = now4.getMinutes();
+  const minsDegrees4 = ((mins4 / 60) * 360) + ((seconds4/60)*6) + 90;
+  minsHand4.style.transform = `rotate(${minsDegrees4}deg)`;
+
+  const hour4 = getSelectValue4();//
+  const hourDegrees4 = ((hour4 / 12) * 360) + ((mins4/60)*30) + 90;   
+  hourHand4.style.transform = `rotate(${hourDegrees4}deg)`;
+}
+
+setInterval(setDate, 1000);
+
+setDate();
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
